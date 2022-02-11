@@ -1,3 +1,4 @@
 function paginaLogin(){
-    location = "login.html";
+    location="login.html";
 }
+
