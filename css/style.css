@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+
+body, html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-color: #070008;
+}
+
+
+.principal{
+    height: 40em;
+    background-image: url('../img/games35.jpg');
+    background-size: cover;
+    z-index:-1;
+
+}
+
+.viper{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.imgviper{
+    width: 29em;
+    opacity: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5%;
+}
+
+/* /////////////////// */
+
+.principalDescricao{
+    color: white;
+    position: absolute;
+    top: 10%;
+    font-size: 16px;
+    height: 500px; /*para caber na tela*/
+    display: flex; /*joga nossos elementos pro padrao em linha*/
+    flex-direction: column; /*transforma esse padrao em linha em colunas*/
+    justify-content: center; 
+    align-items: flex-start;
+}
+
+.principalDescricao .descricao{
+    width: 90%;
+  
+}
+
+.descricao{
+    margin-left: 2%;
+    font-size: 1.8em;
+}
+
+.titulo{
+    font-size: 800%;
+    margin-bottom: 1%;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #f5f3f3;
+    width : cover;
+    animation: animate 5s linear infinite;
+
+}
+
+.logo{
+    padding: 0;
+    text-shadow: 0 0 10px #c40b58,
+        0 0 20px #c40b58,
+        0 0 40px #c40b58,
+        /* 0 0 80px #c40b58,
+        0 0 160px #c40b58; */
+}
+
+
+
+@keyframes animate{
+    0%, 18%, 20%, 50.1%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100%{
+        color: #f0e0e7;
+        text-shadow:none;
+    }
+
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100%{
+        color: #fff;
+        text-shadow: 0 0 10px #c40b58,
+        0 0 20px #c40b58,
+        0 0 40px #c40b58,
+        0 0 80px #c40b58,
+        0 0 160px #c40b58;
+    }
+}
+
+.botao{
+    width: 18rem;
+    height: 5rem;
+    background-color: #c40b58;
+    border: none; /*ele vem com valor padrao, entao tenho q tirar*/
+    border-radius: 5px;
+    color: white;
+    padding: 15px;
+    margin-right: 20px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 1s ease all; /*mudar cor suavement*/
+    overflow: hidden;
+}
+
+
+/* .botao:hover{
+    background-color: #c40b58;
+    color: rgb(187, 10, 84); 
+    box-shadow: 0 0 10px #c40b58, 0 0 40px #c40b58, 0 0 80px #c40b58; 
+    color: white;
+
+}  */
+
+.botao i{
+    margin-right: 1%;
+    font-size: 1em;
+    padding: 5px;
+}
+
+.titulobotoes{
+    font-size: 7em;
+    font-style: normal;
+}
+
+
+.container{ 
+    margin-left: 30px;
+
+}
+
+.principalDescricao .container{ /*apenas o container q esta em principal*/
+    width: 70%;
+}
+
+
+/*
+
+.botao span{
+    position:absolute;
+    display: block;
+
+}
+
+.botao span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #c40b58);
+}
+
+.botao:hover span:nth-child(1){
+    left: 100%;
+    transition: 1s;
+}
+
+.botao span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #c40b58);
+}
+
+.botao:hover span:nth-child(3){
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+.botao span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #c40b58);
+}
+
+.botao:hover span:nth-child(2){
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.botao span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #c40b58);
+}
+
+.botao:hover span:nth-child(4){
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+ */
+
+ .btn-change7{
+    background: #c40b58;
+    margin: 20px;
+    float: left;
+    border:0px;
+    color:#fff;
+    box-shadow: 0 0 1px #ccc;
+    /* -webkit-transition-duration: 0.5s;
+    -webkit-transition-timing-function: linear; */
+    box-shadow:0px 0 0 #810a3b  inset;
+}
+.btn-change7:hover{
+    box-shadow:300px 0 0 #83063a inset;
+}
+
+/* BOOTSTRAP PARTE DOS CARDS DE PRICING */
+
+.planos{
+    display: flex;
+    justify-content: center;
+    font-size: 300%;
+    margin-bottom: 1%;
+    font-weight: bold;
+    color: #f5f3f3;
+    width: 100%;
+    text-shadow: 0 0 1px #c40b58,
+            0 0 2px #c40b58,
+            0 0 4px #c40b58,
+            0 0 8px #c40b58,
+            0 0 16px #c40b58;
+
+}
+
+section.pricing {
+    background: #edeef0;
+    background: linear-gradient(to bottom, #000000, #631741);
+    padding-left: 6%;
+  }
+  
+  .pricing .card {
+    border: none;
+    border-radius: 1rem;
+    transition: all 0.2s;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .pricing hr {
+    margin: 1.5rem 0;
+  }
+  
+  .pricing .card-title {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+  }
+  
+  .pricing .card-price {
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  .pricing .card-price .period {
+    font-size: 0.8rem;
+  }
+  
+  .pricing ul li {
+    margin-bottom: 1rem;
+  }
+  
+  .pricing .text-muted {
+    opacity: 0.7;
+  }
+  
+  .pricing .btn {
+    font-size: 80%;
+    border-radius: 5rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    padding: 1rem;
+    opacity: 0.7;
+    transition: all 0.2s;
+    background: #c40b58;
+  }
+  
+  /* Hover Effects on Card */
+  
+  @media (min-width: 992px) {
+    .pricing .card:hover {
+      margin-top: -.25rem;
+      margin-bottom: .25rem;
+      box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+    }
+  
+    .pricing .card:hover .btn {
+      opacity: 1;
+    }
+    
+  }
+
+  @media(max-width: 950px){
+
+    .titulo{
+        font-size: 700%;
+    }
+
+    .viper{
+        display: none;
+    }
+
+  }
+
+  @media(max-width: 800px){
+
+    .titulo{
+        font-size: 500%;
+    }
+   
+        
+  }
+
+  footer{
+      display: flex;
+      justify-content: center;
+  }
+
+  footer{
+    padding-left: 5%;
+}
+
+.infoAdicionais{
+    padding-top: 5%;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #83063a;
+    border-radius: 15px;
+}
+
+.navbar{
+    background-image: linear-gradient(to left,#ff2ca0,#470734,#111A21);
+}
