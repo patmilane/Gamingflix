@@ -1,8 +1,8 @@
 function entrar(){
-    location= "./indexlogin.html";
+    location= "../indexlogin.html";
 
 }
 
 function recuperarSenha(){
-    location="./recuperar.html";
+    location="../recuperar.html";
 }
