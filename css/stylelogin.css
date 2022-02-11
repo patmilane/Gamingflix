@@ -1,0 +1,85 @@
+body{
+    background-color: black;
+}
+::-webkit-scrollbar{
+    background: #000000;
+ 
+}
+::-webkit-scrollbar-thumb{
+    background: #c40b58;
+    border-radius: 30px;
+}
+body.bg-jogos{
+    background-image: url(../imagens/background2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+.titulo{
+    font-size: 250%;
+    margin-bottom: 1%;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #f5f3f3;
+    width: cover;
+    animation: animate 5s linear infinite;}
+
+    @keyframes animate {
+        0%, 18%, 20%, 50.1%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100%{
+            color: #f0e0e7;
+            text-shadow:none;
+        }
+    
+        18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100%{
+            color: #fff;
+            text-shadow: 0 0 10px #c40b58,
+            0 0 20px hsl(335, 89%, 41%),
+            0 0 40px #c40b58,
+            0 0 80px #c40b58,
+            0 0 160px #c40b58;
+        }
+    }
+    #msgemail{
+        color: #f5f3f3;
+        padding-top: 2px;
+        font-size:15px;
+        display: flex;
+        justify-content:end;
+        animation-timing-function: 20ms;
+
+    }
+    h1{
+        font-family: 'Roboto Condensed', sans-serif;
+
+    }
+    .btn{
+        background-color: #c40b58;
+        border: transparent;
+    }
+    .btn:hover{
+        background-color:  #7e0439;
+        transition:300ms;
+    }
+    #caixa_login{
+        background: rgba(0,0,0,0.7);
+        padding:30px;
+        margin-top: 20px;
+    }
+    h2{
+        font-family: 'Roboto Condensed', sans-serif;
+        color: #f0e0e7;
+        font-size: 30px;
+        
+    }
+    .assineagora{
+        color: #c40b58;
+        text-decoration: none;
+    }
+    .esqueceusenha{
+        padding-top: 15px;
+        font-size:15px;
+        display: flex;
+        justify-content:end;
+    }
+    
