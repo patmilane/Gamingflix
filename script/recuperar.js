@@ -6,7 +6,7 @@ botao.addEventListener('click', ()=>{
     let input = $("#inputemail").val();
 
     try{
-    if(input.indexOf('@') > -1){
+    if(input.indexOf('@')  > -1) {
 
         $("#mensagem").html("Verifique o seu email &#9989<br><br>");
         icone.style.display = "none";
