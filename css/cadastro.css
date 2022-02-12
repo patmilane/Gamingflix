@@ -1,0 +1,12 @@
+*, html{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    font-family: 'Roboto Condensed', sans-serif;
+    background-image: linear-gradient(to right,#FE2CFF,#5B0C65,#111A21);
+    color: #FEFDF8;
+}
+.form-group{
+    margin-left: 2%;
+}
