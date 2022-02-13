@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0; 
+  box-sizing: border-box;
+}
+
+body{
+  background: #000000 !important;
+  color: #ffffff !important;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+main{
+  background: linear-gradient(to bottom, #000000, #55061e);
+
+}
+
+.video-container{
+  height: 95vh;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 5%;
+}
+
+video {
+    object-fit: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.video-container:after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(black, .2);
+    z-index: 1;
+}
+  
+.titulo{
+    width: 90%;
+    padding-bottom: 20px;
+    font-size: 400%;
+    font-weight: bold;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate{
+    0%, 18%, 20%, 50.1%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100%{
+        color: #f0e0e7;
+        text-shadow:none;
+    }
+
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100%{
+        color: #fff;
+        text-shadow: 0 0 10px #c40b58,
+        0 0 20px #c40b58,
+        0 0 40px #c40b58,
+        0 0 80px #c40b58,
+        0 0 160px #c40b58;
+    }
+}
+
+.divbotoes{
+    display: flex;
+    flex-direction: row;
+    margin-left: -18px;
+}
+
+.botao{
+    width: 18rem;
+    height: 5rem;
+    background-color: rgba(196, 11, 88, 0.9);
+    border: none; /*ele vem com valor padrao, entao tenho q tirar*/
+    border-radius: 5px;
+    color: white;
+    padding: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 999;
+    transition: 1s ease all; /*mudar cor suavement*/
+}
+
+.btn-change7{
+  background: #c40b58;
+  margin: 20px;
+  float: left;
+  border:0px;
+  color:#fff;
+  box-shadow: 0 0 1px #ccc;
+  box-shadow:0px 0 0 #810a3b  inset;
+}
+
+.btn-change7:hover{
+  box-shadow:300px 0 0 #83063a inset;
+}
+
+.botao i{
+    margin-right: 1%;
+    font-size: 1em;
+    padding: 5px;
+}
+
+.principal{ 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column; 
+    height: 100%;
+    text-align: left;
+}
+
+.bg-tra{
+    background: rgba(209, 37, 106, 0.4) !important;
+    color: white !important;
+}
+
+p{
+    color: white;
+    font-size: 20px;
+    line-height: 28px;
+}
+  
+.container{
+  max-width: 1260px !important;
+}
+
+.recomendados{
+  padding-bottom: 3%;
+}
+
+h4{
+  text-align: center;
+}
+
+header{ 
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+}
+
+.bg-home.scrolled{
+  background: black !important;
+}
+
+.recom{
+  padding-bottom: 2%;
+}
+
+.linha2{
+  padding-top: 0;
+}
+
+.recom h4{
+  font-size: 2em;
+  color: white !important;
+  padding-bottom: 2%;
+}
+
+.card{
+  border: none !important;
+}
+
+.recom .row .col{
+  padding-right: 1px !important;
+  padding-left: 4px !important;
+}
+
+.planos{
+  display: flex;
+  justify-content: center;
+  font-size: 300%;
+  margin-bottom: 1%;
+  color: #f5f3f3;
+  width: 100%;
+  text-shadow: 0 0 1px #c40b58,
+          0 0 2px #c40b58,
+          0 0 4px #c40b58,
+          0 0 8px #c40b58,
+          0 0 16px #c40b58;
+}
+
+.recom .card a:hover{
+  transform: scale(1.2);
+  transform-origin: center;
+  z-index: 999;
+  transition: .3s ease all;
+  cursor: pointer;
+}
+
+/* .recom .card img:hover{
+   transform: scale(1.2);
+   transform-origin: center;
+   z-index: 99;
+   transition: .3s ease all;
+   cursor: pointer;
+}  */
+
+/*RESPONSIVIDADE*/
+
+@media(min-width: 600px){
+ 
+  .video-container{
+  height: 100vh;
+ }
+}
+
+@media (max-width: 768px) { 
+
+    .titulo{ 
+      width: 70%;
+      padding-bottom: 20px;
+    }
+
+    .recomendados{
+      margin-left: 14%;
+    }
+
+    .row {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .row {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+    }
+    .col{
+      padding-bottom: 2%;
+
+    }
+}
+
+@media(min-width: 600px){
+
+  .video-container{
+    height: 100vh;
+  }
+
+}
+
+@media (max-width: 576px) { 
+   
+  .titulo{
+    font-size: 180%;
+  }
+  .recom h4{
+    font-size: 16px;
+  }
+
+  .recomendados h4{
+    font-size: 16px;
+  }
+}
+
+
+
+
