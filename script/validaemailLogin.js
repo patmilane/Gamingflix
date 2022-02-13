@@ -11,7 +11,7 @@ function validaEmail(field){
     (domain.search(".")!=-1)&&
     (domain.indexOf(".")>=1)&&
     (domain.lastIndexOf(".") < domain.length -1 )){
-        document.getElementById("msgemail").innerHTML="E-mail válido";
+        document.getElementById("msgemail").innerHTML="<font color='green'>E-mail válido";
         console.log("chegou")
           
     }else{

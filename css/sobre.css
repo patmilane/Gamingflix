@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-
 }
 ::-webkit-scrollbar{
     background: rgb(0, 0, 0);
@@ -13,13 +12,14 @@
 .navbar{
  background-image: linear-gradient(to right,#FE2CFF,#5B0C65,#111A21);
 }
-.navbar-dark{
+.navbar-dark,.text-center{
     font-family: 'Roboto Condensed', sans-serif;
 
 }
 h1{
     font-family: 'Roboto Condensed', sans-serif;
     color: #FEFDF8;
+    margin-top: 5%;
     margin-left: 45%;
 }
 body{
@@ -35,13 +35,14 @@ body{
     align-items: flex-start;
 }
 .card{
-    border-color: #FF2CFF;
+    border-color:#FF2CFF;
+    border-width: 2px;
 }
 .png{
     max-width: 15%;
 }
 .card-body{
-  background-image: linear-gradient(#06131B,#101920,#141D24,#1E272E,#414A51);
+    background-image: linear-gradient(#06131B,#101920,#141D24,#1E272E,#414A51);
   padding: 5px;
   max-width: 240px;
   max-height: 110px;
@@ -54,7 +55,7 @@ body{
     border: transparent;
 }
 footer{
-   margin-top:10%;
+   margin-top:4%;
 }
 .rodape{
     background-image: linear-gradient(to right,#FE2CFF,#5B0C65,#111A21);

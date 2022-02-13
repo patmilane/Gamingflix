@@ -10,7 +10,7 @@ body{
     border-radius: 30px;
 }
 body.bg-jogos{
-    background-image: url(../imagens/background2.jpg);
+    background-image: url(/imagens/background2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -49,9 +49,9 @@ body.bg-jogos{
         animation-timing-function: 20ms;
 
     }
+
     h1{
         font-family: 'Roboto Condensed', sans-serif;
-
     }
     .btn{
         background-color: #c40b58;
@@ -60,6 +60,7 @@ body.bg-jogos{
     .btn:hover{
         background-color:  #7e0439;
         transition:300ms;
+        
     }
     #caixa_login{
         background: rgba(0,0,0,0.7);
@@ -70,7 +71,7 @@ body.bg-jogos{
         font-family: 'Roboto Condensed', sans-serif;
         color: #f0e0e7;
         font-size: 30px;
-        
+        text-align: center;
     }
     .assineagora{
         color: #c40b58;
@@ -82,4 +83,8 @@ body.bg-jogos{
         display: flex;
         justify-content:end;
     }
-    
+    .text-center,.text-black{
+        font-family: 'Roboto Condensed', sans-serif;
+        color: #f0e0e7;
+        text-align: center;
+    }

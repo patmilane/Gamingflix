@@ -2,7 +2,7 @@ const cep = document.getElementById("cep")
 const showData = (result)=>{
     for(const campo in result){
         if(document.querySelector("#"+campo)){
-            console.log(campo)
+            document.querySelector("#"+campo).value = result[campo]
         }
     }
 }
@@ -17,10 +17,9 @@ cep.addEventListener("blur",(e)=>{
     .then(response=>{response.json()
         .then(data => showData(data))
     })
-    .catch(e=>console.log('Deu erro'+ e,message))
+    .catch(document.getElementById("msgCEP").innerHTML="<font color='red'>CEP Inválido</font>")
+        
 })
-
-
 function validaNome() {
     var nome= document.getElementById("noome")
     if(nome.value== ""){

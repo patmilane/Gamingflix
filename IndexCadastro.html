@@ -15,16 +15,16 @@
       crossorigin="anonymous"></script>
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"> 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="cadastro.js" defer></script>
-    <link rel="stylesheet" href="cadastro.css">
-    <link rel="icon" href="Logo.png">
+    <script src="script/cadastro.js"defer></script>
+    <link rel="stylesheet" href="/css/cadastro.css">
+    <link rel="icon" href="imagens/logo.png">
     <title>Cadastre-se - GamingFlix</title>
 </head>
 <body>
   <!-- Inicio Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-aqua">
     <div class="container-fluid">
-      <img src="Logo.png" width="50px" alt="" srcset=""></a>
+      <img src="/imagens/Logo.png" width="50px" alt="" srcset=""></a>
       <a class="navbar-brand" href="#">G A M I N G F L I X </a>
       <!-- Referente ao menu Mobile -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -35,10 +35,10 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item item-menu">
-            <a class="nav-link" aria-current="page" href="index.html">Início</a>
+            <a class="nav-link" aria-current="page" href="#">Início</a>
           </li>
           <li class="nav-item item-menu">
-            <a class="nav-link" href="sobre.html">Sobre Nós</a>
+            <a class="nav-link" href="#">Sobre Nós</a>
           </li>
         </ul>
       </div>
@@ -79,53 +79,45 @@
   <div class="form-group row">
     <label for="inputnumber" class="col-sm-2 col-form-label">RG</label>
     <div class="col-sm-6">
-      <input type="number" name="rg" id="rg"class="form-control" placeholder="É só pra te cadastrar como mesário. Brincadeirinha!(Ou não..)">
+      <input type="text" name="rg" maxlength="10" id="rg"class="form-control" placeholder="É só pra te cadastrar como mesário. Brincadeirinha!(Ou não..)">
       <div id="msgRG"></div>
     </div>
   </div>
-
 <div class="form-group row">
     <label for="inputText" class="col-sm-2 col-form-label">CEP</label>
     <div class="col-sm-3">
       <input type="text" maxlength="9" name="cep" id="cep" class="form-control" placeholder="Te mando um lanche.">
       <div id="msgCEP"></div>
     </div>
-    <label for="inputText" class="col-sm-1 col-form-label" id="logradouro">Rua</label>
+    <label for="inputText" class="col-sm-1 col-form-label">Rua</label>
     <div class="col-sm-2">
-      <input type="text" class="form-control" placeholder="Rua">
+      <input type="text" class="form-control" id="logradouro" placeholder="Rua">
     </div>
   </div>
   <div class="form-group row">
-    <label for="inputText" class="col-sm-2 col-form-label" id="bairro">Bairro</label>
+    <label for="inputText" class="col-sm-2 col-form-label">Bairro</label>
     <div class="col-sm-3">
-      <input type="text" class="form-control" placeholder="Bairro">
+      <input type="text" class="form-control" id="bairro" placeholder="Bairro">
     </div>
-    <label for="inputText" class="col-sm-0 col-form-label" id="uf">Estado</label>
+    <label for="inputText" class="col-sm-0 col-form-label">Estado</label>
     <div class="col-sm-1">
-      <input type="text" class="form-control" placeholder="Estado">
+      <input type="text" class="form-control" id="uf" placeholder="Estado">
     </div>
-    <label for="inputnumber" class="col-sm-0 col-form-label" id="numero" >Número</label>
+    <label for="inputnumber" class="col-sm-0 col-form-label" >Número</label>
     <div class="col-sm-1">
-      <input type="number" class="form-control" placeholder="Número">
+      <input type="number" class="form-control"  id="numero" placeholder="Número">
     </div>
   </div>
-
   <div class="form-group row">
-  <label for="inputText" class="col-sm-2 col-form-label"id="localidade">Cidade</label>
+  <label for="inputText" class="col-sm-2 col-form-label">Cidade</label>
     <div class="col-sm-3">
-      <input type="text" class="form-control" placeholder="Cidade">
+      <input type="text" class="form-control" id="localidade"placeholder="Cidade">
     </div>
-    <label for="inputText" class="col-sm-0 col-form-label"id="complemento">Complemento</label>
+    <label for="inputText" class="col-sm-0 col-form-label">Complemento</label>
     <div class="col-sm-2.2">
-      <input type="text" class="form-control" placeholder="Complemento">
+      <input type="text" class="form-control" id="complemento" placeholder="Complemento">
     </div>
   </div>
-
-
-
-
-
-
   <fieldset class="form-group">
     <div class="row">
       <legend class="col-form-label col-sm-2 pt-0">Permissões</legend>

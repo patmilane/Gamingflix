@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="imagens/Logo.png">
+    <link rel="icon" href="/imagens/Logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
@@ -12,33 +12,28 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/stylelogin.css">
     <script src="script/validaemailLogin.js" defer></script>
-
-
+    <script src="script/script.js" defer></script>
     <title>Entrar - Gamingflix</title>
 </head>
 <body class="bg-jogos">
     <div class="container-fluid">
         <header class="row">
-        <h1 class="titulo">GAMINGFLIX</h1>
+        <h1 class="titulo">G A M I N G F L I X</h1>
         </header>
     </div>
     <div id="caixa_login" class="col-4 offset-4">
-            <h1 class="text-white"><strong>Entrar</strong></h1>
+            <h2 class="text-white">Entrar</h2>
         </br>
         <form name="form">
-            <input type="email" 
-            name="email"
-            class="form-control form-control-lg" 
-            onblur="validaEmail(form.email)"
-            placeholder="Digite seu e-mail">
+            <input type="email" name="email" class="form-control form-control-lg" onblur="validaEmail(form.email)"placeholder="Digite seu e-mail">
             <div id="msgemail"></div>
             </br>
             <input type="password" 
             class="form-control form-control-lg" 
             placeholder="Senha"/>
             </br>
-            <button class="btn btn-lg btn-control btn-danger col-12 text-truncate mx-auto botao"> 
-                <a href="home.html" style="text-decoration: none; color: white;">Entrar</a></button>
+           
+            <button class="btn btn-lg btn-control btn-danger col-12 text-truncate mx-auto botao"> <a href="home.html" style="text-decoration: none; color: white;">Entrar</a></button>
         
                 <h3 class="esqueceusenha"><a href="recuperar.html">Esqueci a senha</a></h3>
         </br>
@@ -47,5 +42,14 @@
     </div>
 </br>
 </br>
+</br>
+<footer>
+<!-- Copyright -->
+<div class="text-center p-3" style="background-image: linear-gradient(to right,#FE2CFF,#5B0C65,#111A21);">
+    © Resilia Educação - Todos os direitos reservados.
+    <a class="text-black" href="https://inscricoes.resilia.dev">Inscreva-se</a>
+  </div>
+  <!-- Copyright -->
+</footer>
 </body>
 </html>
