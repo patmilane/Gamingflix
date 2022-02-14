@@ -10,7 +10,7 @@ body{
     border-radius: 30px;
 }
 body.bg-jogos{
-    background-image: url(/imagens/background2.jpg);
+    background-image: url("imagens/background2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;

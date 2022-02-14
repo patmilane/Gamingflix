@@ -147,6 +147,8 @@ header{
   width: 100%;
   position: fixed;
   z-index: 999;
+  font-family: 'Roboto Condensed', sans-serif;
+
 }
 
 .bg-home.scrolled{
