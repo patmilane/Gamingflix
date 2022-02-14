@@ -200,6 +200,15 @@ header{
   cursor: pointer;
 }
 
+::-webkit-scrollbar{
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #83063a;
+  border-radius: 15px;
+}
+
 /* .recom .card img:hover{
    transform: scale(1.2);
    transform-origin: center;
