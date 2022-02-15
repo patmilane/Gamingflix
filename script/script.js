@@ -6,7 +6,6 @@ function paginaCadastro(){
     location="./IndexCadastro.html";
 }
 
-
 function entrar(){
     location="./home.html";
 }
