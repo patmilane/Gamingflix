@@ -16,9 +16,9 @@ cep.addEventListener("blur",(e)=>{
     fetch(`https://viacep.com.br/ws/${search}/json/`,options)
     .then(response=>{response.json()
         .then(data => showData(data))
+        (document.getElementById("msgCEP").innerHTML="<font color='green'>CEP válido</font>")
     })
-    .catch(document.getElementById("msgCEP").innerHTML="<font color='red'>CEP Inválido</font>")
-        
+    .catch(document.getElementById("msgCEP").innerHTML="<font color='red'>CEP Inválido</font>")  
 })
 function validaNome() {
     var nome= document.getElementById("noome")
@@ -27,7 +27,6 @@ function validaNome() {
     }else{
     document.getElementById("msgNome").innerHTML="<font color='green'>Validado.</font>"};
 };
-
 function validaEmail(field) {
     usuario = field.value.substring(0, field.value.indexOf("@"));
     dominio = field.value.substring(field.value.indexOf("@")+ 1, field.value.length);
@@ -64,5 +63,3 @@ function comparaSenha(senha1, senha2){
         document.getElementById("msgSenha3").innerHTML="<font color='red'>Senhas diferentes.</font>"
     }
 }
-
-
