@@ -192,6 +192,19 @@ header{
           0 0 16px #c40b58;
 }
 
+.planos_descricao{
+  display: flex;
+  justify-content: center;
+  font-size: 150%;
+  margin-bottom: 1%;
+  color: #f5f3f3;
+  width: 100%;
+  text-shadow: 0 0 1px #c40b58,
+          0 0 2px #c40b58;
+          
+}  
+
+
 .recom .card a:hover{
   transform: scale(1.2);
   transform-origin: center;
