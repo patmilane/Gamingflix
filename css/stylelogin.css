@@ -1,6 +1,8 @@
 html{
     height: 100%;
+    width: 100%;
 }
+
 body{
     background-color: black;
     min-height: 100%;  
@@ -116,13 +118,22 @@ body.bg-jogos{
     @media(max-width: 650px){
         .divcaixa{
             width: 300px;
-            margin-left: 16%;
+            margin-left: 10%;
+            margin-top: 10%;
+
         }
     }
 
     @media(max-width: 400px){
         .divcaixa{
-            width: 200px;
-            margin-left: 19%;
+            width: cover;
+            /* margin-left: 19%; */
+        }
+    }
+
+    @media(max-width: 300px){
+        .divcaixa{
+            width: cover;
+            margin-left: 0;
         }
     }
