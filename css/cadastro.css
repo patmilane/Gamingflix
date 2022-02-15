@@ -1,12 +1,43 @@
+body {
+    background-image: linear-gradient(#06131B,#101920,#141D24,#1E272E,#414A51);
+    overflow-x: hidden;
+}
+
+html {
+    height: 100%;
+}
+
 *, html{
     margin: 0;
     padding: 0;
+    color: white;
 }
+
+::-webkit-scrollbar{
+    background: #000000;
+}
+::-webkit-scrollbar-thumb{
+    background: #c40b58;
+    border-radius: 30px;}
+
 .navbar{
+    font-style: 'Roboto Condensed', sans-serif;
     font-family: 'Roboto Condensed', sans-serif;
-    background-image: linear-gradient(to right,#FE2CFF,#5B0C65,#111A21);
+    background-image: linear-gradient(to left, #ff2ca0, #470734, #111A21);
     color: #FEFDF8;
 }
 .form-group{
     margin-left: 2%;
+}
+
+.btn {
+    background-color: #c40b58;
+    border: transparent;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    align-items: center;
 }
