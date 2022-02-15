@@ -54,7 +54,7 @@ body{
 }
 
 .titulo{
-    font-size: 800%;
+    font-size: 700%;
     margin-bottom: 1%;
     margin-top: 20px;
     font-weight: bold;
@@ -350,6 +350,8 @@ footer{
 
     .infoAdicionais{
         font-size: 230%;
+        display: flex;
+        text-align: center;
     }
 }
 
