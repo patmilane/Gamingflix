@@ -6,11 +6,11 @@
     background: rgb(0, 0, 0);
 }
 ::-webkit-scrollbar-thumb{
-    background: #5B0C65;
+    background: #83063a;
     border-radius: 15px;
 }
 .navbar{
- background-image: linear-gradient(to right,#FE2CFF,#5B0C65,#111A21);
+ background-image: linear-gradient(to left,#ff2ca0,#470734,#111A21);
 }
 .navbar-dark,.text-center{
     font-family: 'Roboto Condensed', sans-serif;
@@ -35,7 +35,7 @@ body{
     align-items: flex-start;
 }
 .card{
-    border-color:#FF2CFF;
+    border-color:#ac2b76;
     border-width: 2px;
 }
 .png{
@@ -57,6 +57,4 @@ body{
 footer{
    margin-top:4%;
 }
-.rodape{
-    background-image: linear-gradient(to right,#FE2CFF,#5B0C65,#111A21);
-}
+

@@ -349,7 +349,7 @@ footer{
     }
 
     .infoAdicionais{
-        font-size: 230%;
+        font-size: 210%;
         display: flex;
         text-align: center;
     }
@@ -374,7 +374,7 @@ footer{
 
     .texto-corpo{
         justify-content: center;
-        margin-left: 5%;
+        margin-left: 10%;
         font-size: 120%;
     }
 
@@ -385,6 +385,11 @@ footer{
     
     .sectiondois{
         font-size: 110%;
+    }
+
+    .planos, .infoAdicionais{
+        font-size: 150%;
+        
     }
   
   }
@@ -418,5 +423,6 @@ footer{
   @media(max-width: 400px){
       .titulo{
           font-size: 200%;
+          margin-top: 22%;
       }
   }
