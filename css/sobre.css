@@ -12,6 +12,11 @@
 .navbar{
  background-image: linear-gradient(to left,#ff2ca0,#470734,#111A21);
 }
+
+.navbar-brand{
+    font-size: 25px;
+}
+
 .navbar-dark,.text-center{
     font-family: 'Roboto Condensed', sans-serif;
 

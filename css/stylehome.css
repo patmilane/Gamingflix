@@ -17,6 +17,10 @@ main{
 
 }
 
+.logo{
+  font-size: 29px;
+}
+
 .video-container{
   height: 95vh;
   position: relative;
